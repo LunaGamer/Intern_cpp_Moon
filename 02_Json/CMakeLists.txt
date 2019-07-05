@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.12)
+project(02_Json)
+include_directories("rapidjson")
+include_directories("json")
+add_definitions("-DPATH_TO_JSON=\"${CMAKE_SOURCE_DIR}/json/test.json\"")
+add_executable(02_Json main.cpp)
